@@ -1,75 +1,139 @@
-## Hi there 👋
+# PartMe AI
 
-<!--
+[![Stars](https://img.shields.io/github/stars/partme-ai/full-stack-skills?style=social)](https://github.com/partme-ai/full-stack-skills)
+[![Repos](https://img.shields.io/badge/Repos-40+-blue?style=flat-square)](https://github.com/orgs/partme-ai/repositories)
+[![Agent Skills](https://img.shields.io/badge/Agent_Skills-454-orange?style=flat-square)](https://github.com/full-statck-skills)
+[![License](https://img.shields.io/badge/License-Apache_2.0-green?style=flat-square)](https://github.com/partme-ai/.github/blob/main/LICENSE)
 
-**Here are some ideas to get you started:**
+**学习AI、掌握AI、聚焦智能体驱动（Agent-driven）的应用开发与落地，传播与AI有关的技术实践。**
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+> LLMs · 提示工程 · 函数调用 · RAG & Embeddings · Agents · MCP 协议 · Agent Skills · Agent Loop · 多智能体协作 · LLMs Tools · 模型微调
 
-> 学习AI、掌握AI、聚焦包含 AI 功能的应用程序的开发和落地、传播与AI有关的技术实践。如：LLMs、提示工程、函数调用、RAG&Embeddings、Agents、LLMs Tools、模型微调、Spring AI 等！       
+---
 
+## 关于我们
 
-#### Spring AI 大模型支持（官方支持）：
+PartMe AI 是一个专注于 AI 智能体生态的技术组织，致力于：
 
-   + [x] [OpenAI ChatGPT 系列模型](https://platform.openai.com/docs/guides/gpt/chat-completions-api)
-   + [x] [Amazon Bedrock 系列模型](https://aws.amazon.com/cn/bedrock/)
-   + [x] [Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference)
-   + [x] [Anthropic Claude 系列模型](https://anthropic.com)
-   + [x] [Mistral 系列模型](https://mistral.ai/)
-   + [x] [Ollama](https://github.com/ollama/ollama)
-   + [x] [Google PaLM2/Gemini 系列模型](https://developers.generativeai.google)
-   + [x] [StabilityAI 系列模型](https://platform.stability.ai/)
-   + [x] [ZhiPu AI 系列模型](https://platform.stability.ai/)
-   + [x] [MiniMax 系列模型](https://platform.minimaxi.com/)
+- **Agent Skills 体系建设** — 454 个标准化技能包，覆盖全栈开发全链路
+- **智能体基础设施** — OpenClaw 插件生态、Spring AI 集成、LLM 网关
+- **工程实践沉淀** — 从需求到交付的 Agent-driven 工作流
 
-#### Spring AI 大模型支持（TeachingAI 扩展）：
-   
-   + [x] [百度文心一言系列模型](https://cloud.baidu.com/doc/WENXINWORKSHOP/index.html)
-              
-      + [x] [spring-ai-baidu-ai-qianfan-spring-boot-starter](https://github.com/teachingai/spring-ai-baidu-ai-qianfan-spring-boot-starter)            
-   + [ ] [阿里通义千问系列模型](https://help.aliyun.com/document_detail/2400395.html)         
-      + [ ] [spring-ai-aliyun-dashscope-spring-boot-starter](https://github.com/teachingai/spring-ai-aliyun-dashscope-spring-boot-starter) 
-   + [x] [华为盘古大模型](https://www.huaweicloud.com/product/pangu.html)         
-      + [x] [spring-ai-huawei-ai-pangu-spring-boot-starter](https://github.com/teachingai/spring-ai-huawei-ai-pangu-spring-boot-starter)
-      + [ ] spring-ai-huawei-ai-vector-store-spring-boot-starter （待实现）
-   + [x] [华为 AI Gallery 系列模型](https://pangu.huaweicloud.com/gallery/home.html)
-      + [x] [spring-ai-huawei-ai-gallery-spring-boot-starter](https://github.com/teachingai/spring-ai-huawei-ai-gallery-spring-boot-starter)
-   + [ ] [讯飞星火认知大模型](https://www.xfyun.cn/doc/spark/Web.html)
-        + [ ] spring-ai-xfyun-xinghuo-spring-boot-starter （待实现） 
-   + [ ] [360 智脑](https://ai.360.cn)
-        + [ ] spring-ai-360ai-qiyuan-spring-boot-starter （待实现）
-   + [ ] [腾讯混元大模型](https://cloud.tencent.com/document/product/1729)
-        + [ ] spring-ai-tencent-hunyuan-spring-boot-starter （待实现）
-   + [x] [Moonshot AI](https://platform.moonshot.cn/)         
-      + [x] [spring-ai-moonshotai-spring-boot-starter](https://github.com/teachingai/spring-ai-moonshotai-spring-boot-starter)         
-   + [ ] [百川大模型](https://platform.baichuan-ai.com)
-        + [ ] spring-ai-baichuan-ai-baichuan-spring-boot-starter （待实现）
-   + [ ] [字节云雀大模型](https://www.volcengine.com/product/ark) (WIP)
-   + [ ] [MINIMAX](https://api.minimax.chat/)
-        + [ ] spring-ai-minimax-spring-boot-starter （待实现）
-   + [ ] [Groq](https://wow.groq.com/)
-        + [ ] spring-ai-groq-spring-boot-starter （待实现）
-   + [ ] [零一万物](https://platform.lingyiwanwu.com/)
-        + [ ] spring-ai-lingyiwanwu-spring-boot-starter （待实现）
-   + [ ] [阶跃星辰](https://platform.stepfun.com/)
-        + [ ] spring-ai-stepfun-spring-boot-starter （待实现）
-   + [ ] [Coze](https://www.coze.com/)
-        + [ ] spring-ai-coze-spring-boot-starter （待实现）
-   + [x] LLM Red Team 开源组织开发的 [LLMs Free API](https://github.com/orgs/LLM-Red-Team/repositories?q=free-api)
-      + [x] [spring-ai-llms-free-api-spring-boot-starter](https://github.com/teachingai/spring-ai-llms-free-api-spring-boot-starter)
-   + [ ] 昆仑万维天工
-      + [ ] spring-ai-skywork-spring-boot-starter （待实现）
-   + [ ] 商汤大模型
-      + [ ] spring-ai-sensetime-spring-boot-starter （待实现）
+---
 
-#### Spring AI 大模型工具支持（TeachingAI 扩展）：
+## 核心项目
 
-   + [ ] [LangFuse](https://langfuse.com/)
-      + [ ] spring-ai-langfuse-spring-boot-starter （待实现）
-   + [ ] [Prometheus](https://github.com/prometheus)
-      + [ ] spring-ai-prometheus-spring-boot-starter （待实现）
+### Agent Skills 生态
+
+| 项目 | Stars | 说明 |
+|------|-------|------|
+| [full-stack-skills](https://github.com/partme-ai/full-stack-skills) | ![Stars](https://img.shields.io/github/stars/partme-ai/full-stack-skills?style=social) | 454 个 Agent Skills，42 个独立仓库 |
+| [full-statck-skills](https://github.com/full-statck-skills) | — | 技能仓库组织（42 repos） |
+
+### 智能体基础设施
+
+| 项目 | Stars | 说明 |
+|------|-------|------|
+| [openclaw-plugins](https://github.com/partme-ai/openclaw-plugins) | ![Stars](https://img.shields.io/github/stars/partme-ai/openclaw-plugins?style=social) | OpenClaw 30+ 企业级插件 |
+| [teams-of-agents](https://github.com/partme-ai/teams-of-agents) | ![Stars](https://img.shields.io/github/stars/partme-ai/teams-of-agents?style=social) | 多智能体协作团队 |
+| [hermes-agent](https://github.com/partme-ai/hermes-agent) | — | 可成长的 AI Agent |
+
+### Spring AI 与 LLM 工具
+
+| 项目 | Stars | 说明 |
+|------|-------|------|
+| [spring-ai-examples](https://github.com/partme-ai/spring-ai-examples) | ![Stars](https://img.shields.io/github/stars/partme-ai/spring-ai-examples?style=social) | Spring AI 实践示例 |
+| [spring-ai-gateway](https://github.com/partme-ai/spring-ai-gateway) | ![Stars](https://img.shields.io/github/stars/partme-ai/spring-ai-gateway?style=social) | LLM/SLM API 网关 |
+| [langchain4j-examples](https://github.com/partme-ai/langchain4j-examples) | ![Stars](https://img.shields.io/github/stars/partme-ai/langchain4j-examples?style=social) | Langchain4j 实践示例 |
+
+### AI 应用与工具
+
+| 项目 | Stars | 说明 |
+|------|-------|------|
+| [agency-agents-zh](https://github.com/partme-ai/agency-agents-zh) | — | 211 个即插即用 AI 专家角色 |
+| [opencli](https://github.com/partme-ai/opencli) | — | 通用 CLI Hub 与 AI 原生运行时 |
+| [opencli-admin](https://github.com/partme-ai/opencli-admin) | — | 可视化内容采集/AI 打标系统 |
+
+---
+
+## 技术栈
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                    AI 智能体层                           │
+│  Agent Skills · Agent Loop · 多智能体协作 · MCP 协议     │
+├─────────────────────────────────────────────────────────┤
+│                    模型与推理层                          │
+│  LLMs · Spring AI · Langchain4j · RAG · Embeddings     │
+├─────────────────────────────────────────────────────────┤
+│                    工程化与交付                          │
+│  DDD · 微服务 · Docker · K8s · CI/CD · 测试             │
+├─────────────────────────────────────────────────────────┤
+│                    前端与跨端                            │
+│  Vue · React · Flutter · Tauri · uni-app · Electron     │
+└─────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 快速开始
+
+### 安装 Agent Skills
+
+```bash
+# 安装单个技能包
+npx skills add full-statck-skills/tauri-skills    # 52 个 Tauri 技能
+npx skills add full-statck-skills/spring-skills   # 7 个 Spring Boot 技能
+npx skills add full-statck-skills/vue-skills      # 7 个 Vue.js 技能
+
+# 手动安装
+git clone https://github.com/full-statck-skills/<skill-name>.git
+cp -r <skill-name>/skills/* .claude/skills/
+```
+
+### Spring AI 集成
+
+```xml
+<dependency>
+    <groupId>org.springframework.ai</groupId>
+    <artifactId>spring-ai-spring-boot-starter</artifactId>
+</dependency>
+```
+
+---
+
+## 贡献指南
+
+欢迎贡献新技能或改进现有技能！
+
+1. **Fork** 目标仓库
+2. 按照 [Agent Skills 规范](https://agentskills.io/) 创建 `SKILL.md`
+3. 提交 PR
+
+技能结构规范：
+
+```
+skills/<group>-skills/<skill>/
+  SKILL.md      # 技能主文档（必需）
+  examples/     # 使用示例（可选）
+  references/   # 参考资料（可选）
+  scripts/      # 自动化脚本（可选）
+```
+
+---
+
+## 联系我们
+
+- Email: [partmeai@gmail.com](mailto:partmeai@gmail.com)
+- GitHub: [github.com/partme-ai](https://github.com/partme-ai)
+- Skills: [github.com/full-statck-skills](https://github.com/full-statck-skills)
+
+---
+
+<div align="center">
+
+**学习AI · 掌握AI · 聚焦智能体驱动的应用开发与落地**
+
+Made with ❤️ by PartMe AI Team
+
+</div>
