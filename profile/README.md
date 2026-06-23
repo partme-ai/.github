@@ -28,7 +28,7 @@ PartMe AI 是一个专注于 AI 智能体生态的技术组织，致力于：
 | 项目 | Stars | 说明 |
 |------|-------|------|
 | [full-stack-skills](https://github.com/partme-ai/full-stack-skills) | ![Stars](https://img.shields.io/github/stars/partme-ai/full-stack-skills?style=social) | 454 个 Agent Skills，42 个独立仓库 |
-| [full-statck-skills](https://github.com/full-statck-skills) | — | 技能仓库组织（42 repos） |
+| [full-stack-skills](https://github.com/full-stack-skills) | — | 技能仓库组织（42 repos） |
 
 ### 智能体基础设施
 
@@ -82,12 +82,12 @@ PartMe AI 是一个专注于 AI 智能体生态的技术组织，致力于：
 
 ```bash
 # 安装单个技能包
-npx skills add full-statck-skills/tauri-skills    # 52 个 Tauri 技能
-npx skills add full-statck-skills/spring-skills   # 7 个 Spring Boot 技能
-npx skills add full-statck-skills/vue-skills      # 7 个 Vue.js 技能
+npx skills add full-stack-skills/tauri-skills    # 52 个 Tauri 技能
+npx skills add full-stack-skills/spring-skills   # 7 个 Spring Boot 技能
+npx skills add full-stack-skills/vue-skills      # 7 个 Vue.js 技能
 
 # 手动安装
-git clone https://github.com/full-statck-skills/<skill-name>.git
+git clone https://github.com/full-stack-skills/<skill-name>.git
 cp -r <skill-name>/skills/* .claude/skills/
 ```
 
@@ -126,7 +126,7 @@ skills/<group>-skills/<skill>/
 
 - Email: [partmeai@gmail.com](mailto:partmeai@gmail.com)
 - GitHub: [github.com/partme-ai](https://github.com/partme-ai)
-- Skills: [github.com/full-statck-skills](https://github.com/full-statck-skills)
+- Skills: [github.com/full-stack-skills](https://github.com/full-stack-skills)
 
 ---
 
