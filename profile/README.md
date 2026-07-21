@@ -1,3 +1,7 @@
+<p align="center">
+  <img alt="partme-ai" src="./assets/banner.svg" width="800">
+</p>
+
 # PartMe AI
 
 [![Stars](https://img.shields.io/github/stars/partme-ai/full-stack-skills?style=social)](https://github.com/partme-ai/full-stack-skills)
