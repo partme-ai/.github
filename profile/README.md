@@ -5,13 +5,11 @@
 # PartMe AI
 
 [![Stars](https://img.shields.io/github/stars/partme-ai/full-stack-skills?style=social)](https://github.com/partme-ai/full-stack-skills)
-[![Repos](https://img.shields.io/badge/Repos-40+-blue?style=flat-square)](https://github.com/orgs/partme-ai/repositories)
-[![Agent Skills](https://img.shields.io/badge/Agent_Skills-454-orange?style=flat-square)](https://github.com/full-statck-skills)
 [![License](https://img.shields.io/badge/License-Apache_2.0-green?style=flat-square)](https://github.com/partme-ai/.github/blob/main/LICENSE)
 
 **学习AI、掌握AI、聚焦智能体驱动（Agent-driven）的应用开发与落地，传播与AI有关的技术实践。**
 
-> LLMs · 提示工程 · 函数调用 · RAG & Embeddings · Agents · MCP 协议 · Agent Skills · Agent Loop · 多智能体协作 · LLMs Tools · 模型微调
+> LLMs · 提示工程 · 函数调用 · RAG & Embeddings · Agents · MCP 协议 · Agent Skills · Agent Plugins · AIGC · Agent Loop · 多智能体协作 · 模型微调
 
 ---
 
@@ -19,20 +17,29 @@
 
 PartMe AI 是一个专注于 AI 智能体生态的技术组织，致力于：
 
-- **Agent Skills 体系建设** — 454 个标准化技能包，覆盖全栈开发全链路
-- **智能体基础设施** — OpenClaw 插件生态、Spring AI 集成、LLM 网关
-- **工程实践沉淀** — 从需求到交付的 Agent-driven 工作流
+- **全栈研发技能** — 覆盖前端、后端、移动端、架构设计、测试与运维
+- **AIGC 创作技能** — 支持图像、视频、音频与 3D 内容制作
+- **智能体插件与基础设施** — 连接设计、代码质量、内容生成和运维工具，提供 OpenClaw 插件、Spring AI 集成与 LLM 网关
+- **工程实践沉淀** — 从需求到交付，以及从创意到内容发布的 Agent-driven 工作流
 
 ---
 
 ## 核心项目
 
-### Agent Skills 生态
+### 技能与插件生态
 
-| 项目 | Stars | 说明 |
-|------|-------|------|
-| [full-stack-skills](https://github.com/partme-ai/full-stack-skills) | ![Stars](https://img.shields.io/github/stars/partme-ai/full-stack-skills?style=social) | 454 个 Agent Skills，42 个独立仓库 |
-| [full-stack-skills](https://github.com/full-stack-skills) | — | 技能仓库组织（42 repos） |
+<!-- ecosystem-navigation:start -->
+
+| 方向 | 适用任务 | 目录与安装 | 组织 |
+| --- | --- | --- | --- |
+| Full Stack Skills | 软件开发、架构设计、测试与运维 | [PartMe.AI / full-stack-skills](https://github.com/partme-ai/full-stack-skills) | [full-stack-skills](https://github.com/full-stack-skills) |
+| Full AIGC Skills | 图像、视频、音频等内容创作 | [PartMe.AI / full-aigc-skills](https://github.com/partme-ai/full-aigc-skills) | [full-aigc-skills](https://github.com/full-aigc-skills) |
+| Full Stack Plugins | 研发与运维的工具集成和工作流 | [PartMe.AI / full-stack-plugins](https://github.com/partme-ai/full-stack-plugins) | [full-stack-plugins](https://github.com/full-stack-plugins) |
+| Full AIGC Plugins | 内容制作的工具集成和生成工作流 | [PartMe.AI / full-aigc-plugins](https://github.com/partme-ai/full-aigc-plugins) | [full-aigc-plugins](https://github.com/full-aigc-plugins) |
+
+<!-- ecosystem-navigation:end -->
+
+全栈技能目录当前收录 **51 个技能包、788 个技能条目**（2026-10-06），统计范围与来源见[目录说明](https://github.com/partme-ai/full-stack-skills#简介)。
 
 ### 智能体基础设施
 
@@ -85,15 +92,22 @@ PartMe AI 是一个专注于 AI 智能体生态的技术组织，致力于：
 ### 安装 Agent Skills
 
 ```bash
-# 安装单个技能包
-npx skills add full-stack-skills/tauri-skills    # 52 个 Tauri 技能
-npx skills add full-stack-skills/spring-skills   # 7 个 Spring Boot 技能
-npx skills add full-stack-skills/vue-skills      # 7 个 Vue.js 技能
+# 在当前项目为 Codex 安装 Vue 3 技能
+npx skills add full-stack-skills/vue-skills --skill vue3 --agent codex
 
-# 手动安装
-git clone https://github.com/full-stack-skills/<skill-name>.git
-cp -r <skill-name>/skills/* .claude/skills/
+# 查看 AIGC 技能包中的可选技能
+npx skills add full-aigc-skills/coze-skills --list
+
+# 手动安装技能包到 Claude Code 项目目录
+git clone https://github.com/full-stack-skills/<package-name>.git
+mkdir -p .claude/skills
+cp -r <package-name>/skills/* .claude/skills/
 ```
+
+### 安装插件
+
+- [Full Stack Plugins 安装指南](https://github.com/partme-ai/full-stack-plugins#安装)：研发、设计、代码质量与运维工具。
+- [Full AIGC Plugins 安装指南](https://github.com/partme-ai/full-aigc-plugins#安装)：图像、视频、音频与内容制作工具。
 
 ### Spring AI 集成
 
@@ -108,17 +122,18 @@ cp -r <skill-name>/skills/* .claude/skills/
 
 ## 贡献指南
 
-欢迎贡献新技能或改进现有技能！
+欢迎贡献技能、插件、实践示例或文档改进！
 
 1. **Fork** 目标仓库
-2. 按照 [Agent Skills 规范](https://agentskills.io/) 创建 `SKILL.md`
+2. 遵循目标仓库的贡献说明；技能按 [Agent Skills 规范](https://agentskills.io/) 编写 `SKILL.md`
 3. 提交 PR
 
 技能结构规范：
 
 ```
-skills/<group>-skills/<skill>/
+skills/<skill>/
   SKILL.md      # 技能主文档（必需）
+  agents/       # Codex 展示配置，如 openai.yaml（可选）
   examples/     # 使用示例（可选）
   references/   # 参考资料（可选）
   scripts/      # 自动化脚本（可选）
@@ -130,7 +145,6 @@ skills/<group>-skills/<skill>/
 
 - Email: [partmeai@gmail.com](mailto:partmeai@gmail.com)
 - GitHub: [github.com/partme-ai](https://github.com/partme-ai)
-- Skills: [github.com/full-stack-skills](https://github.com/full-stack-skills)
 
 ---
 
